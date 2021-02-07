@@ -7,6 +7,11 @@ const replaceAllButton = document.querySelector(".replace-all-button")
 const rowElements = document.querySelectorAll(".row")
 
 
+function getCellElements (currentRowElement) {
+    return currentRowElement.querySelectorAll(".cell")
+}
+
+
 
 replaceAllButton.addEventListener("click", function() {
     console.log(findInput.value);
